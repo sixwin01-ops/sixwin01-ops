@@ -1,5 +1,6 @@
 ## Hi there 👋
-I am learning to use Github effectively, efficiently and securely.
+This is my first README.md 
+
 
 <!--
 **sixwin01-ops/sixwin01-ops** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
