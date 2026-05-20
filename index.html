@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>字典輸入法(桌面版)</title>
+<link rel="icon" href="favicond.svg" />
+<style>
+div.side {
+  width:48%;
+  height:1900px;
+  position:absolute;
+  top:3px;
+  left:1%;
+}
+div.main {
+  width:49%;
+  height:1900px;
+  position:absolute;
+  top:3px;
+  left:50%;
+}
+.hdr {
+  border: 1px solid #ccc;
+  background-color: aqua;
+  height: 44px;
+  margin: 4px;
+}
+
+.hdr button {
+  width: 130px;
+  height: 38px;
+  text-align:center;
+  background-color: DeepSkyBlue;
+  float: left;
+  padding: 5px 10px;
+  margin: 3px 20px;
+  font-size: 20px;
+}
+
+.sidecontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color:aqua;
+}
+
+p#info {display:inline-block;width:36%;margin-left:10px;font-size:20px;}
+button#vsbut {display:inline;width:76px;height:30px;margin:5px;background-color:plum;font-size:15px;}
+button#copybut {display:inline;width:76px;height:30px;margin:5px;background-color:deepskyblue;font-size:15px;}
+button#tranbut {display:inline;width:76px;height:30px;margin:5px;background-color:lightgreen;font-size:15px;}
+button#esbut {display:inline;width:76px;height:30px;margin:5px;background-color:LawnGreen;font-size:15px;}
+textarea#mpad {display:block;margin-left:5px;margin-top:10px;margin-bottom:10px;font-size:22px;}
+.grid-container {display:grid;grid-template-columns:repeat(auto-fill,70px);grid-auto-rows:minmax(60px,auto);
+justify-content:space-between;align-items:center;border:2px dashed RoyalBlue;}
+nav.grid-container > a {
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  color:Black;
+  padding-top:10px;padding-bottom:5px;padding-left:18px;padding-right:18px;background:LightSteelBlue;border:2px solid RoyalBlue;
+ font:23px sans-serif;
+ cursor:default;}
+nav.grid-container > a:hover {
+background-color:yellow;
+font-weight:bold;}
+nav.grid-container > a.dword {
+  font-size:20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+  padding-right:10px;
+  cursor:default;}
+nav.grid-container > a.dword:hover {
+background-color:yellow;
+font-weight:bold;}
+div.grid-container > div {
+width:50px;
+height:40px;
+padding:2px;
+background:LightSteelBlue;
+border:2px solid RoyalBlue;
+font:1.7em sans-serif;
+text-align:center;
+cursor:default;}
+div.grid-container > div:hover {
+background-color:yellow;}
+</style>
+</head>
+
+<body>
+<div class="side">
+<div class="hdr">
+<button  onclick="show(event, 'kpdiv')" id="defaultOpen"> 部首 </button>
+<button  onclick="show(event, 'tsdiv')">總筆劃</button>
+</div>
+
+<div id="kpdiv" class="sidecontent">
+<nav class="grid-container">
+<a href="cgridaa.html" target="iframea"> 一 </a>
+<a href="cgridaa.html" target="iframea"> 丨 </a>
+<a href="cgridaa.html" target="iframea"> 丶 </a>
+<a href="cgridaa.html" target="iframea"> 丿 </a>
+<a href="cgridaa.html" target="iframea"> 乙 </a>
+<a href="cgridaa.html" target="iframea"> 亅 </a>
+<a href="cgridaa.html" target="iframea"> 二 </a>
+<a href="cgridaa.html" target="iframea"> 亠 </a>
+<a class="dword" href="cgridab.html" target="iframea"> 人亻 </a>
+<a href="cgridac.html" target="iframea"> 儿 </a>
+<a href="cgridac.html" target="iframea"> 入 </a>
+<a href="cgridac.html" target="iframea"> 八 </a>
+<a href="cgridac.html" target="iframea"> 冂 </a>
+<a href="cgridac.html" target="iframea"> 冖 </a>
+<a href="cgridac.html" target="iframea"> 冫 </a>
+<a href="cgridac.html" target="iframea"> 几 </a>
+<a href="cgridac.html" target="iframea"> 凵 </a>
+<a class="dword" href="cgridad.html" target="iframea"> 刀刂 </a>
+<a href="cgridad.html" target="iframea"> 力 </a>
+<a href="cgridae.html" target="iframea"> 勹 </a>
+<a href="cgridae.html" target="iframea"> 匕 </a>
+<a href="cgridae.html" target="iframea"> 匚 </a>
+<a href="cgridae.html" target="iframea"> 匸 </a>
+<a href="cgridae.html" target="iframea"> 十 </a>
+<a href="cgridae.html" target="iframea"> 卜 </a>
+<a href="cgridae.html" target="iframea"> 卩 </a>
+<a href="cgridae.html" target="iframea"> 厂 </a>
+<a href="cgridae.html" target="iframea"> 厶 </a>
+<a href="cgridae.html" target="iframea"> 又 </a>
+<a href="cgridaf.html" target="iframea"> 口 </a>
+<a href="cgridag.html" target="iframea"> 囗 </a>
+<a href="cgridag.html" target="iframea"> 土 </a>
+<a href="cgridag.html" target="iframea"> 士 </a>
+<a href="cgridah.html" target="iframea"> 夂 </a>
+<a href="cgridah.html" target="iframea"> 夊 </a>
+<a href="cgridah.html" target="iframea"> 夕 </a>
+<a href="cgridah.html" target="iframea"> 大 </a>
+<a href="cgridai.html" target="iframea"> 女 </a>
+<a href="cgridaj.html" target="iframea"> 子 </a>
+<a href="cgridaj.html" target="iframea"> 宀 </a>
+<a href="cgridaj.html" target="iframea"> 寸 </a>
+<a href="cgridaj.html" target="iframea"> 小 </a>
+<a href="cgridaj.html" target="iframea"> 𡯁 </a>
+<a href="cgridaj.html" target="iframea"> 尸 </a>
+<a href="cgridaj.html" target="iframea"> 屮 </a>
+<a href="cgridak.html" target="iframea"> 山 </a>
+<a href="cgridak.html" target="iframea"> 巛 </a>
+<a href="cgridak.html" target="iframea"> 工 </a>
+<a href="cgridak.html" target="iframea"> 己 </a>
+<a href="cgridak.html" target="iframea"> 巾 </a>
+<a href="cgridal.html" target="iframea"> 干 </a>
+<a href="cgridal.html" target="iframea"> 幺 </a>
+<a href="cgridal.html" target="iframea"> 广 </a>
+<a href="cgridal.html" target="iframea"> 廴 </a>
+<a href="cgridal.html" target="iframea"> 廾 </a>
+<a href="cgridal.html" target="iframea"> 弋 </a>
+<a href="cgridal.html" target="iframea"> 弓 </a>
+<a href="cgridal.html" target="iframea"> 彐 </a>
+<a href="cgridal.html" target="iframea"> 彡 </a>
+<a href="cgridal.html" target="iframea"> 彳 </a>
+<a class="dword" href="cgridam.html" target="iframea"> 心忄</a>
+<a href="cgridan.html" target="iframea"> 戈 </a>
+<a href="cgridan.html" target="iframea"> 戶 </a>
+<a class="dword" href="cgridan.html" target="iframea"> 手扌</a>
+<a href="cgridao.html" target="iframea"> 支 </a>
+<a class="dword" href="cgridao.html" target="iframea"> 攴攵</a>
+<a href="cgridao.html" target="iframea"> 文 </a>
+<a href="cgridao.html" target="iframea"> 斗 </a>
+<a href="cgridao.html" target="iframea"> 斤 </a>
+<a href="cgridao.html" target="iframea"> 方 </a>
+<a href="cgridao.html" target="iframea"> 无 </a>
+<a href="cgridap.html" target="iframea"> 日 </a>
+<a href="cgridap.html" target="iframea"> 曰 </a>
+<a href="cgridap.html" target="iframea"> 月 </a>
+<a href="cgridaq.html" target="iframea"> 木 </a>
+<a href="cgridar.html" target="iframea"> 欠 </a>
+<a href="cgridar.html" target="iframea"> 止 </a>
+<a class="dword" href="cgridar.html" target="iframea"> 歹歺</a>
+<a href="cgridar.html" target="iframea"> 殳 </a>
+<a href="cgridar.html" target="iframea"> 毋 </a>
+<a href="cgridar.html" target="iframea"> 比 </a>
+<a href="cgridar.html" target="iframea"> 毛 </a>
+<a href="cgridar.html" target="iframea"> 氏 </a>
+<a href="cgridar.html" target="iframea"> 气 </a>
+<a class="dword" href="cgridas.html" target="iframea"> 水氵</a>
+<a class="dword" href="cgridat.html" target="iframea"> 火灬</a>
+<a class="dword" href="cgridau.html" target="iframea"> 爪爫</a>
+<a href="cgridau.html" target="iframea"> 父 </a>
+<a href="cgridau.html" target="iframea"> 爻 </a>
+<a href="cgridau.html" target="iframea"> 爿 </a>
+<a href="cgridau.html" target="iframea"> 片 </a>
+<a href="cgridau.html" target="iframea"> 牙 </a>
+<a href="cgridau.html" target="iframea"> 牛 </a>
+<a class="dword" href="cgridau.html" target="iframea"> 犬犭</a>
+<a href="cgridau.html" target="iframea"> 玄 </a>
+<a class="dword" href="cgridav.html" target="iframea"> 玉⺩</a>
+<a href="cgridav.html" target="iframea"> 瓜 </a>
+<a href="cgridav.html" target="iframea"> 瓦 </a>
+<a href="cgridav.html" target="iframea"> 甘 </a>
+<a href="cgridav.html" target="iframea"> 生 </a>
+<a href="cgridav.html" target="iframea"> 用 </a>
+<a href="cgridav.html" target="iframea"> 田 </a>
+<a href="cgridav.html" target="iframea"> 疋 </a>
+<a href="cgridaw.html" target="iframea"> 疒 </a>
+<a href="cgridaw.html" target="iframea"> 癶 </a>
+<a href="cgridaw.html" target="iframea"> 白 </a>
+<a href="cgridaw.html" target="iframea"> 皮 </a>
+<a href="cgridaw.html" target="iframea"> 皿 </a>
+<a class="dword" href="cgridaw.html" target="iframea"> 目罒</a>
+<a href="cgridaw.html" target="iframea"> 矛 </a>
+<a href="cgridaw.html" target="iframea"> 矢 </a>
+<a href="cgridax.html" target="iframea"> 石 </a>
+<a class="dword" href="cgridax.html" target="iframea"> 示⺭</a>
+<a href="cgridax.html" target="iframea"> 禸 </a>
+<a href="cgriday.html" target="iframea"> 禾 </a>
+<a href="cgriday.html" target="iframea"> 穴 </a>
+<a href="cgriday.html" target="iframea"> 立 </a>
+<a class="dword" href="cgriday.html" target="iframea"> 竹⺮</a>
+<a href="cgridaz.html" target="iframea">米</a>
+<a href="cgridaz.html" target="iframea">糸</a>
+<a href="cgridba.html" target="iframea">缶</a>
+<a href="cgridba.html" target="iframea">网</a>
+<a href="cgridba.html" target="iframea">羊</a>
+<a href="cgridba.html" target="iframea">羽</a>
+<a href="cgridba.html" target="iframea">老</a>
+<a href="cgridba.html" target="iframea">而</a>
+<a href="cgridba.html" target="iframea">耒</a>
+<a href="cgridba.html" target="iframea">耳</a>
+<a href="cgridba.html" target="iframea">聿</a>
+<a class="dword" href="cgridbb.html" target="iframea">肉⺼</a>
+<a href="cgridbb.html" target="iframea">臣</a>
+<a href="cgridbb.html" target="iframea">自</a>
+<a href="cgridbb.html" target="iframea">至</a>
+<a href="cgridbb.html" target="iframea">臼</a>
+<a href="cgridbb.html" target="iframea">舌</a>
+<a href="cgridbb.html" target="iframea">舛</a>
+<a href="cgridbb.html" target="iframea">舟</a>
+<a href="cgridbb.html" target="iframea">艮</a>
+<a href="cgridbb.html" target="iframea">色</a>
+<a class="dword" href="cgridbc.html" target="iframea">艸⺿</a>
+<a href="cgridbc.html" target="iframea">虍</a>
+<a href="cgridbd.html" target="iframea">虫</a>
+<a href="cgridbd.html" target="iframea">血</a>
+<a href="cgridbd.html" target="iframea">行</a>
+<a class="dword" href="cgridbe.html" target="iframea">衣⻂</a>
+<a href="cgridbe.html" target="iframea">襾</a>
+<a href="cgridbe.html" target="iframea">見</a>
+<a href="cgridbe.html" target="iframea">角</a>
+<a href="cgridbf.html" target="iframea">言</a>
+<a href="cgridbf.html" target="iframea">谷</a>
+<a href="cgridbg.html" target="iframea">豆</a>
+<a href="cgridbg.html" target="iframea">豕</a>
+<a href="cgridbg.html" target="iframea">豸</a>
+<a href="cgridbg.html" target="iframea">貝</a>
+<a href="cgridbg.html" target="iframea">赤</a>
+<a href="cgridbg.html" target="iframea">走</a>
+<a href="cgridbh.html" target="iframea">足</a>
+<a href="cgridbh.html" target="iframea">身</a>
+<a href="cgridbh.html" target="iframea">車</a>
+<a href="cgridbh.html" target="iframea">辛</a>
+<a href="cgridbh.html" target="iframea">辰</a>
+<a class="dword" href="cgridbi.html" target="iframea">辵⻍</a>
+<a class="dword" href="cgridbi.html" target="iframea">邑⻏</a>
+<a href="cgridbi.html" target="iframea">酉</a>
+<a href="cgridbi.html" target="iframea">釆</a>
+<a href="cgridbi.html" target="iframea">里</a>
+<a href="cgridbj.html" target="iframea">金</a>
+<a href="cgridbj.html" target="iframea">長</a>
+<a href="cgridbk.html" target="iframea">門</a>
+<a class="dword" href="cgridbk.html" target="iframea">阜⻖</a>
+<a href="cgridbk.html" target="iframea">隶</a>
+<a href="cgridbk.html" target="iframea">隹</a>
+<a href="cgridbk.html" target="iframea">雨</a>
+<a href="cgridbk.html" target="iframea">青</a>
+<a href="cgridbk.html" target="iframea">非</a>
+<a href="cgridbk.html" target="iframea">面</a>
+<a href="cgridbl.html" target="iframea">革</a>
+<a href="cgridbl.html" target="iframea">韋</a>
+<a href="cgridbl.html" target="iframea">韭</a>
+<a href="cgridbl.html" target="iframea">音</a>
+<a href="cgridbl.html" target="iframea">頁</a>
+<a href="cgridbl.html" target="iframea">風</a>
+<a href="cgridbl.html" target="iframea">飛</a>
+<a href="cgridbl.html" target="iframea">食</a>
+<a href="cgridbl.html" target="iframea">首</a>
+<a href="cgridbm.html" target="iframea">香</a>
+<a href="cgridbm.html" target="iframea">馬</a>
+<a href="cgridbm.html" target="iframea">骨</a>
+<a href="cgridbm.html" target="iframea">高</a>
+<a href="cgridbm.html" target="iframea">髟</a>
+<a href="cgridbm.html" target="iframea">鬥</a>
+<a href="cgridbm.html" target="iframea">鬯</a>
+<a href="cgridbm.html" target="iframea">鬲</a>
+<a href="cgridbm.html" target="iframea">鬼</a>
+<a href="cgridbm.html" target="iframea">魚</a>
+<a href="cgridbn.html" target="iframea">鳥</a>
+<a href="cgridbn.html" target="iframea">鹵</a>
+<a href="cgridbn.html" target="iframea">鹿</a>
+<a href="cgridbn.html" target="iframea">麥</a>
+<a href="cgridbn.html" target="iframea">麻</a>
+<a href="cgridbo.html" target="iframea">黃</a>
+<a href="cgridbo.html" target="iframea">黍</a>
+<a href="cgridbo.html" target="iframea">黑</a>
+<a href="cgridbo.html" target="iframea">黹</a>
+<a href="cgridbo.html" target="iframea">黽</a>
+<a href="cgridbo.html" target="iframea">鼎</a>
+<a href="cgridbo.html" target="iframea">鼓</a>
+<a href="cgridbo.html" target="iframea">鼠</a>
+<a href="cgridbo.html" target="iframea">鼻</a>
+<a href="cgridbo.html" target="iframea">齊</a>
+<a href="cgridbo.html" target="iframea">齒</a>
+<a href="cgridbo.html" target="iframea">龍</a>
+<a href="cgridbo.html" target="iframea">龜</a>
+<a href="cgridbo.html" target="iframea">龠</a>
+<a href="cgridw.html" target="iframea"> ★ </a>
+</nav>
+</div>
+
+<div id="tsdiv" class="sidecontent">
+<nav class="grid-container">
+<a href="cgridts03.html" target="iframea">1s</a>
+<a href="cgridts03.html" target="iframea">2s</a>
+<a href="cgridts03.html" target="iframea">3s</a>
+<a href="cgridts04.html" target="iframea">4s</a>
+<a href="cgridts05.html" target="iframea">5s</a>
+<a href="cgridts06.html" target="iframea">6s</a>
+<a href="cgridts07.html" target="iframea">7s</a>
+<a href="cgridts08.html" target="iframea">8s</a>
+<a href="cgridts09.html" target="iframea">9s</a>
+<a href="cgridts10.html" target="iframea">10s</a>
+<a href="cgridts11.html" target="iframea">11s</a>
+<a href="cgridts12.html" target="iframea">12s</a>
+<a href="cgridts13.html" target="iframea">13s</a>
+<a href="cgridts14.html" target="iframea">14s</a>
+<a href="cgridts15.html" target="iframea">15s</a>
+<a href="cgridts16.html" target="iframea">16s</a>
+<a href="cgridts17.html" target="iframea">17s</a>
+<a href="cgridts18.html" target="iframea">18s</a>
+<a href="cgridts19.html" target="iframea">19s</a>
+<a href="cgridts20.html" target="iframea">20s</a>
+<a href="cgridts21.html" target="iframea">21s</a>
+<a href="cgridts22.html" target="iframea">22s</a>
+<a href="cgridts23.html" target="iframea">23s</a>
+<a href="cgridts24.html" target="iframea">24s</a>
+<a href="cgridts25.html" target="iframea">25s</a>
+<a href="cgridts25.html" target="iframea">26s</a>
+<a href="cgridts25.html" target="iframea">27s</a>
+<a href="cgridts25.html" target="iframea">28s</a>
+<a href="cgridts25.html" target="iframea">29s</a>
+<a href="cgridts25.html" target="iframea">30s</a>
+<a href="cgridts25.html" target="iframea">31s</a>
+<a href="cgridts25.html" target="iframea">32s</a>
+</nav>
+<br>
+<h3> Punctuation marks 標點符號 : </h3>
+<div class="grid-container">
+<div onclick="five('＄')">＄</div>
+<div onclick="five('？')">？</div>
+<div onclick="five('％')">％</div>
+<div onclick="five('！')">！</div>
+<div onclick="five('：')">：</div>
+<div onclick="five('，')">，</div>
+<div onclick="five('。')">。</div>
+</div>
+<br>
+</div>
+</div>
+
+<div class="main">
+<p id="info"> info </p>
+<button id="vsbut" > 清除 </button>
+<button id="copybut" > 貼上 </button>
+<button id="tranbut" > spare1 </button>
+<button id="esbut" > spare2 </button>
+<textarea id="mpad" cols=48 rows=5>
+</textarea>
+<iframe src="cgridw.html" name="iframea" width=100% height=100%></iframe>
+</div>
+<script>
+(function() {
+  const mpad=document.getElementById('mpad')
+  const info=document.getElementById('info')
+  const vsto=document.getElementById('vsbut')
+  const copyto=document.getElementById('copybut')
+  const tranto=document.getElementById('tranbut')
+  const esto=document.getElementById('esbut')
+  window.addEventListener('message',
+    function(event) {four(event,mpad)})
+  copyto.addEventListener('click',
+    function() {toclip(mpad.value)})
+  vsto.addEventListener('click',
+    function() {vstext()})
+  tranto.addEventListener('click',
+    function() {trans(mpad.value)})
+  esto.addEventListener('click',
+    function() {esound(mpad.value)})
+  addEventListener('load',
+    function() {defaultMessage(info)})
+  mpad.addEventListener("input",(event)=>{
+    if (event.target.value!=="") {
+      window.addEventListener("beforeunload",buhandler)} else {
+      window.removeEventListener("beforeunload",buhandler)};
+    });
+} )()
+// add here
+function buhandler(event) {
+  event.preventDefault();
+  event.returnValue=true;
+}
+function defaultMessage(info) {
+  info.innerHTML='Please click the word'
+}
+function toclip(mpadtext) {
+  navigator.clipboard.writeText(mpadtext).then (
+    () => {
+      info.innerHTML='Copy OK 貼上成功';
+      },
+    () => {
+      info.innerHTML='Copy failed'
+      },
+    );
+}
+function four(event,mpad) {
+  if (event.data.length !== 1) return;
+  let from=mpad.selectionStart,
+      toto=mpad.selectionEnd;
+  mpad.value=mpad.value.slice(0,from)+event.data +mpad.value.slice(toto);
+  mpad.selectionStart=from+event.data.length;
+  mpad.selectionEnd=from+event.data.length;
+if (mpad.value!=="") {
+  window.addEventListener("beforeunload",buhandler)} else {
+  window.removeEventListener("beforeunload",buhandler)};
+}
+function trans(mpadtext) {
+  info.innerHTML='spare 1'
+}
+function esound(mpadtext) {
+  info.innerHTML='spare 2'
+}
+function vstext() {
+  if (mpad.value!=="") {
+  if (confirm("Confirm delete ?")) {
+    mpad.value="";
+    defaultMessage(info);
+    window.removeEventListener("beforeunload",buhandler);
+    }
+  }
+}
+
+function show(evt, kptsdiv) {
+  let i, sidecontent;
+  sidecontent = document.getElementsByClassName("sidecontent");
+  for (i = 0; i < sidecontent.length; i++) {
+    sidecontent[i].style.display = "none";
+  }
+  document.getElementById(kptsdiv).style.display = "block";
+}
+document.getElementById("defaultOpen").click();
+function five(punc) {
+  let from=mpad.selectionStart,
+      toto=mpad.selectionEnd;
+  mpad.value=mpad.value.slice(0,from)+punc +mpad.value.slice(toto);
+  mpad.selectionStart=from+event.data.length;
+  mpad.selectionEnd=from+event.data.length;
+}
+</script>
+   
+</body>
+</html>
+<!--
+-->
