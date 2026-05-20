@@ -1,0 +1,23 @@
+
+body {background:aquamarine;}
+div.grid-container {display:grid;
+grid-template-columns:repeat(auto-fill,70px);
+grid-auto-rows:minmax(60px,auto);
+justify-content:space-between;
+align-items:center;
+border:2px dashed RoyalBlue;}
+div.grid-container > div {
+width:50px;
+height:40px;
+padding:2px;
+background:LightSteelBlue;
+border:2px solid RoyalBlue;
+font-family:"Arial",sans-serif;
+font-size:1.8em;
+/* font-weight:bold; */
+text-align:center;
+cursor:default;}
+div.grid-container > div:hover {
+background-color:yellow;}
+.rbox {
+  border-radius:0.6em;}
