@@ -1,26 +1,121 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title> wip </title>
+<title> gridba </title>
 <link rel="stylesheet" href="cgridw.css" />
 </head>
 <body>
-<h2> Work in progress </h2>
+<h3> Words with key portion : 缶,网,羊,羽,老,而,耒,耳,聿 </h3>
 <div class="grid-container">
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
+<!--
+-->
+<div onclick="four('缶')">缶</div>
+<div onclick="four('缸')">缸</div>
+<div onclick="four('缺')">缺</div>
+<div onclick="four('缽')">缽</div>
+<div onclick="four('罄')">罄</div>
+<div onclick="four('罈')">罈</div>
+<div onclick="four('罌')">罌</div>
+<div onclick="four('罐')">罐</div>
+<div class="rbox"> 网 </div>
+<div onclick="four('网')">网</div>
+<div onclick="four('罕')">罕</div>
+<div onclick="four('罔')">罔</div>
+<div onclick="four('罟')">罟</div>
+<div onclick="four('署')">署</div>
+<div onclick="four('置')">置</div>
+<div onclick="four('罩')">罩</div>
+<div onclick="four('罪')">罪</div>
+<div onclick="four('罰')">罰</div>
+<div onclick="four('罵')">罵</div>
+<div onclick="four('罷')">罷</div>
+<div onclick="four('罹')">罹</div>
+<div onclick="four('羅')">羅</div>
+<div onclick="four('羈')">羈</div>
+<div class="rbox"> 羊 </div>
+<div onclick="four('羊')">羊</div>
+<div onclick="four('羌')">羌</div>
+<div onclick="four('美')">美</div>
+<div onclick="four('羔')">羔</div>
+<div onclick="four('羚')">羚</div>
+<div onclick="four('羞')">羞</div>
+<div onclick="four('善')">善</div>
+<div onclick="four('義')">義</div>
+<div onclick="four('羨')">羨</div>
+<div onclick="four('群')">群</div>
+<div onclick="four('羲')">羲</div>
+<div onclick="four('羶')">羶</div>
+<div onclick="four('羸')">羸</div>
+<div onclick="four('羹')">羹</div>
+<div class="rbox"> 羽 </div>
+<div onclick="four('羽')">羽</div>
+<div onclick="four('羿')">羿</div>
+<div onclick="four('翅')">翅</div>
+<div onclick="four('翁')">翁</div>
+<div onclick="four('習')">習</div>
+<div onclick="four('翎')">翎</div>
+<div onclick="four('翌')">翌</div>
+<div onclick="four('翟')">翟</div>
+<div onclick="four('翕')">翕</div>
+<div onclick="four('翔')">翔</div>
+<div onclick="four('翡')">翡</div>
+<div onclick="four('翠')">翠</div>
+<div onclick="four('翩')">翩</div>
+<div onclick="four('翰')">翰</div>
+<div onclick="four('翱')">翱</div>
+<div onclick="four('翳')">翳</div>
+<div onclick="four('翼')">翼</div>
+<div onclick="four('翹')">翹</div>
+<div onclick="four('翻')">翻</div>
+<div onclick="four('耀')">耀</div>
+<div class="rbox"> 老 </div>
+<div onclick="four('老')">老</div>
+<div onclick="four('考')">考</div>
+<div onclick="four('者')">者</div>
+<div onclick="four('耆')">耆</div>
+<div class="rbox"> 而 </div>
+<div onclick="four('而')">而</div>
+<div onclick="four('耐')">耐</div>
+<div onclick="four('耍')">耍</div>
+<div class="rbox"> 耒 </div>
+<div onclick="four('耒')">耒</div>
+<div onclick="four('耕')">耕</div>
+<div onclick="four('耘')">耘</div>
+<div onclick="four('耗')">耗</div>
+<div onclick="four('耙')">耙</div>
+<div class="rbox"> 耳 </div>
+<div onclick="four('耳')">耳</div>
+<div onclick="four('耷')">耷</div>
+<div onclick="four('耶')">耶</div>
+<div onclick="four('耽')">耽</div>
+<div onclick="four('耿')">耿</div>
+<div onclick="four('聆')">聆</div>
+<div onclick="four('聊')">聊</div>
+<div onclick="four('聘')">聘</div>
+<div onclick="four('聖')">聖</div>
+<div onclick="four('聚')">聚</div>
+<div onclick="four('聞')">聞</div>
+<div onclick="four('聲')">聲</div>
+<div onclick="four('聳')">聳</div>
+<div onclick="four('聰')">聰</div>
+<div onclick="four('聯')">聯</div>
+<div onclick="four('聶')">聶</div>
+<div onclick="four('職')">職</div>
+<div onclick="four('聽')">聽</div>
+<div onclick="four('聾')">聾</div>
+<div class="rbox"> 聿 </div>
+<div onclick="four('聿')">聿</div>
+<div onclick="four('肆')">肆</div>
+<div onclick="four('肄')">肄</div>
+<div onclick="four('肅')">肅</div>
+<div onclick="four('肇')">肇</div>
+<div> 。 </div>
 </div>
+<script>
+function four(kp) {
+  window.parent.postMessage(kp, "*"); 
+}
+</script>
 </body>
 </html>
 <!--
