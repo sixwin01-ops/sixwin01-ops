@@ -1,27 +1,113 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title> wip </title>
+<title> gridap </title>
 <link rel="stylesheet" href="cgridw.css" />
 </head>
 <body>
-<h2> Work in progress </h2>
+<h3> Words with key portion : 日,曰,月 </h3>
 <div class="grid-container">
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
-<div> 一 </div>
+<!--
+-->
+<div onclick="four('日')">日</div>
+<div onclick="four('旦')">旦</div>
+<div onclick="four('早')">早</div>
+<div onclick="four('旨')">旨</div>
+<div onclick="four('旬')">旬</div>
+<div onclick="four('旭')">旭</div>
+<div onclick="four('旱')">旱</div>
+<div onclick="four('旺')">旺</div>
+<div onclick="four('昔')">昔</div>
+<div onclick="four('昆')">昆</div>
+<div onclick="four('昌')">昌</div>
+<div onclick="four('昇')">昇</div>
+<div onclick="four('明')">明</div>
+<div onclick="four('昏')">昏</div>
+<div onclick="four('易')">易</div>
+<div onclick="four('昂')">昂</div>
+<div onclick="four('春')">春</div>
+<div onclick="four('是')">是</div>
+<div onclick="four('昧')">昧</div>
+<div onclick="four('映')">映</div>
+<div onclick="four('昭')">昭</div>
+<div onclick="four('星')">星</div>
+<div onclick="four('昨')">昨</div>
+<div onclick="four('昶')">昶</div>
+<div onclick="four('時')">時</div>
+<div onclick="four('晉')">晉</div>
+<div onclick="four('晃')">晃</div>
+<div onclick="four('晌')">晌</div>
+<div onclick="four('晏')">晏</div>
+<div onclick="four('晒')">晒</div>
+<div class="rbox">11s</div>
+<div onclick="four('晦')">晦</div>
+<div onclick="four('晚')">晚</div>
+<div onclick="four('晤')">晤</div>
+<div onclick="four('晨')">晨</div>
+<div onclick="four('晝')">晝</div>
+<div onclick="four('晰')">晰</div>
+<div onclick="four('晴')">晴</div>
+<div onclick="four('暑')">暑</div>
+<div onclick="four('晶')">晶</div>
+<div onclick="four('智')">智</div>
+<div onclick="four('晾')">晾</div>
+<div onclick="four('普')">普</div>
+<div onclick="four('景')">景</div>
+<div onclick="four('暖')">暖</div>
+<div onclick="four('暗')">暗</div>
+<div onclick="four('暈')">暈</div>
+<div onclick="four('暉')">暉</div>
+<div onclick="four('暇')">暇</div>
+<div onclick="four('暢')">暢</div>
+<div onclick="four('暨')">暨</div>
+<div onclick="four('暴')">暴</div>
+<div onclick="four('暮')">暮</div>
+<div onclick="four('暫')">暫</div>
+<div onclick="four('曉')">曉</div>
+<div onclick="four('曆')">曆</div>
+<div onclick="four('曇')">曇</div>
+<div onclick="four('暹')">暹</div>
+<div onclick="four('曙')">曙</div>
+<div onclick="four('曖')">曖</div>
+<div onclick="four('曝')">曝</div>
+<div onclick="four('曠')">曠</div>
+<div onclick="four('曦')">曦</div>
+<div onclick="four('曬')">曬</div>
+<div class="rbox"> 曰 </div>
+<div onclick="four('曰')">曰</div>
+<div onclick="four('曰')">曱</div>
+<div onclick="four('曲')">曲</div>
+<div onclick="four('曳')">曳</div>
+<div onclick="four('更')">更</div>
+<div onclick="four('書')">書</div>
+<div onclick="four('曼')">曼</div>
+<div onclick="four('曹')">曹</div>
+<div onclick="four('曾')">曾</div>
+<div onclick="four('替')">替</div>
+<div onclick="four('會')">會</div>
+<div onclick="four('最')">最</div>
+<div class="rbox"> 月 </div>
+<div onclick="four('月')">月</div>
+<div onclick="four('有')">有</div>
+<div onclick="four('服')">服</div>
+<div onclick="four('朋')">朋</div>
+<div onclick="four('朗')">朗</div>
+<div onclick="four('朕')">朕</div>
+<div onclick="four('朔')">朔</div>
+<div onclick="four('望')">望</div>
+<div onclick="four('朝')">朝</div>
+<div onclick="four('期')">期</div>
+<div onclick="four('朦')">朦</div>
+<div onclick="four('朧')">朧</div>
+<div> 。 </div>
 </div>
+<script>
+function four(kp) {
+  window.parent.postMessage(kp, "*"); 
+}
+</script>
 </body>
 </html>
 <!--
 -->
+
