@@ -7,11 +7,11 @@ Thanks!
 
 Program description:
 
-Basically, it is a textarea with 65 keyboards: 42 for key portions and 23 for total strokes. You select which key portion or total stroke on the left half of the window, and the corresponding keyboard will appear on the right half. You can still use the input methods provided by the system, but if you forget the Changjie code, for example, you can fallback to this method. You don't have to memorize any codes. However, you should know how to lookup a dictionary, what you see is what you get!
+Basically, it is a textarea with 65 keyboards: 42 for key portions and 23 for total strokes.  You select which key portion or total stroke on the left half of the window,  and the corresponding keyboard will appear on the right half.  You can still use the input methods provided by the system, but if you forget the Changjie code, for example, you can fallback to this method.  You don't have to memorize any codes. However, you should know how to lookup a dictionary, what you see is what you get!
 
 After entering all the words, you can paste them to the system clipboard and then copy them back to the application you want.
 
-There are about 3000 to 4000 frequently used Chinese words. If you want to add/delete words or change the order of the words, you can edit the keyboard's html file, its name can be found in the index.html file.
+There are about 3000 to 4000 frequently used Chinese words. If you want to add/delete words or change the order of the words,  you can edit the keyboard's html file, its name can be found in the index.html file.
 
 程式描述：
 
