@@ -410,6 +410,7 @@ function defaultMessage(info) {
   info.innerHTML='Please click the word'
 }
 function toclip(mpadtext) {
+  if (confirm("Others may see the clipboard content. Continue or not? 其他人可能睇到剪貼板內容。是否繼續？")) {
   navigator.clipboard.writeText(mpadtext).then (
     () => {
       info.innerHTML='Copy OK 貼上成功';
@@ -418,6 +419,7 @@ function toclip(mpadtext) {
       info.innerHTML='Copy failed'
       },
     );
+  }  
 }
 function four(event,mpad) {
   if (event.data.length !== 1) return;
