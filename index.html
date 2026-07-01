@@ -423,6 +423,7 @@ function toclip(mpadtext) {
 }
 function four(event,mpad) {
   if (event.data.length !== 1) return;
+  mpad.focus();
   let from=mpad.selectionStart,
       toto=mpad.selectionEnd;
   mpad.value=mpad.value.slice(0,from)+event.data +mpad.value.slice(toto);
