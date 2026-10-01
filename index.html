@@ -464,8 +464,8 @@ function five(punc) {
   let from=mpad.selectionStart,
       toto=mpad.selectionEnd;
   mpad.value=mpad.value.slice(0,from)+punc +mpad.value.slice(toto);
-  mpad.selectionStart=from+event.data.length;
-  mpad.selectionEnd=from+event.data.length;
+  mpad.selectionStart=from+punc.length;
+  mpad.selectionEnd=from+punc.length;
 }
 </script>
    
